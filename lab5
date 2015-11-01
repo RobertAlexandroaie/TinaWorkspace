@@ -1,0 +1,26 @@
+p 135.0 90.0 p2 1 n {P1 ready} ne
+t 810.0 160.0 t4 c 0 w n depozitare e
+t 455.0 115.0 t0 c 0 w n {se prelucreaza materia} ne
+p 455.0 190.0 p1 0 ne {materie prelucrata} ne
+p 455.0 50.0 p0 10 n {materie prima} ne
+p 140.0 225.0 p3 0 n {in lucru} e
+t 680.0 165.0 t3 c 0 w n {incepe lucru} sw
+p 745.0 230.0 p5 0 n {in lucru} ne
+p 740.0 85.0 p4 1 n {P2 ready} ne
+t 105.0 160.0 t2 c 0 w n depozitare w
+t 185.0 160.0 t1 c 0 w n {incepe lucru} ne
+e p0 t0 1 n
+e t0 p1 1 n
+e p1 t1 1 n
+e p2 t1 1 n
+e t1 p3 1 n
+e p3 t2 1 n
+e t2 p2 1 n
+e p1 t3 2 n
+e t3 p5 1 n
+e p5 t4 1 n
+e t4 p4 1 n
+e p4 t3 1 n
+h lab5
+
+

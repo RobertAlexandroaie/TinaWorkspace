@@ -1,0 +1,48 @@
+p 140.0 160.0 S1idle 0 n
+p 435.0 65.0 R1 2 n
+p 430.0 200.0 R2 1 n
+p 630.0 155.0 P2working 0 e
+p 270.0 160.0 S2idle 0 n
+p 200.0 55.0 P1idle 1 n
+t 200.0 105.0 startP1 s 0 w n {} ne
+t 635.0 95.0 startT3 e 0 w n {} ne
+t 635.0 220.0 finishT3 e 0 w n {} ne
+t 135.0 215.0 startS1 w 0 w n {} ne
+p 135.0 310.0 S1working 0 w
+t 275.0 215.0 startS2 w 0 w n {} ne
+p 270.0 310.0 S2working 0 w
+t 130.0 375.0 finishS1 sw 0 w n {} ne
+t 270.0 385.0 finishS2 sw 0 w n {} ne
+t 70.0 460.0 t7 0 w n
+p 635.0 50.0 P2idle 1 n
+p 200.0 490.0 P1finished 0 n
+e P1idle startP1 1 n
+e startP1 S1idle 1 n
+e startP1 S2idle 1 n
+e S1idle startS1 1 n
+e startS1 S1working 1 n
+e S1working finishS1 1 n
+e S2idle startS2 1 n
+e startS2 S2working 1 n
+e S2working finishS2 1 n
+e R1 0.5094905228 134.2385936 startS1 0.1091372413 113.7013632 1 n
+e finishS1 0.8824782664 225.816297 R1 0.666615646 103.9422917 1 n
+e R1 startS2 1 n
+e R2 startS2 1 n
+e finishS2 R1 1 n
+e finishS2 R2 1 n
+e P2idle startT3 1 n
+e startT3 P2working 1 n
+e P2working finishT3 1 n
+e R1 startT3 1 n
+e R2 startT3 1 n
+e finishT3 R1 1 n
+e finishT3 R2 1 n
+e finishS2 P1finished 1 n
+e finishS1 P1finished 1 n
+e P1finished t7 2 n
+e t7 0.3374356649 114.9086594 P1idle 0.5321388112 129.6341005 1 n
+e finishT3 0.04675463543 124.3261839 P2idle 0.9548921066 107.2800075 1 n
+h lab4
+
+

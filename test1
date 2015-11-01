@@ -1,0 +1,43 @@
+p 180.0 110.0 P_activ 1 n
+p 40.0 270.0 P_terminat 0 n
+t 140.0 210.0 t4 c 0 w n activare nw
+t 175.0 295.0 t3 c 0 w n depoziteaza_produs n
+p 615.0 220.0 C_terminat 0 s
+t 220.0 175.0 t0 c 0 w n produce_produs e
+p 275.0 255.0 P_procesare 0 ne
+t 655.0 145.0 t8 c 0 w n activare ne
+t 390.0 435.0 t1 c 0 w n fix_cap e
+p 580.0 50.0 C_activ 1 n
+t 480.0 140.0 t6 c 0 w n consuma_produs nw
+p 355.0 340.0 bufer 0 n
+t 680.0 240.0 t9 c 0 w n activare ne
+p 630.0 310.0 C_repaus 0 s
+t 520.0 295.0 t7 c 0 w n rest n
+p 240.0 410.0 bufer_compl 3 nw
+e P_activ t0 1 n
+e t0 P_procesare 1 n
+e bufer t1 1 n
+e t1 bufer_compl 1 n
+e P_procesare t3 1 n
+e t3 P_terminat 1 n
+e t3 bufer 1 n
+e bufer_compl t3 1 n
+e P_terminat t4 1 n
+e t4 P_activ 1 n
+e bufer t6 1 n
+e C_activ t6 1 n
+e t6 C_terminat 1 n
+e bufer_compl t7 3 n
+e t7 C_repaus 1 n
+e C_terminat t8 1 n
+e t8 C_activ 1 n
+e bufer t8 1 n
+e t8 bufer 1 n
+e t7 bufer_compl 3 n
+e C_terminat t7 1 n
+e C_repaus t9 1 n
+e t9 C_activ 1 n
+e t6 bufer_compl 1 n
+h test1
+
+

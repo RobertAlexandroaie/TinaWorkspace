@@ -1,0 +1,25 @@
+t 25.0 260.0 t2 c 0 w n revine ne
+p 115.0 310.0 p2 0 n {P inactiv} ne
+t 165.0 155.0 t0 0 w n
+p 230.0 100.0 p1 0 n buffer ne
+p 445.0 50.0 p3 1 n {C activ} ne
+t 535.0 125.0 t4 c 0 w n revine ne
+p 540.0 270.0 p4 0 n {C inactiv} ne
+t 330.0 190.0 t3 c 0 w n {goleste buffer} ne
+p 260.0 250.0 p5 3 n {buffer complementar} s
+p 115.0 70.0 p0 1 n {P activ} ne
+e p0 t0 1 n
+e t0 p1 1 n
+e p2 t2 1 n
+e t2 p0 1 n
+e t0 p2 1 n
+e p3 t3 1 n
+e p1 t3 2 nw
+e t3 p4 1 n
+e p4 t4 1 n
+e t4 p3 1 n
+e p5 t0 1 n
+e t3 p5 2 ne
+h lab2
+
+

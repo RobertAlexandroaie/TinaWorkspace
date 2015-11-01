@@ -1,0 +1,35 @@
+Struct version 3.2.0 -- 10/22/13 -- LAAS/CNRS
+
+parsed net test1_1
+
+8 places, 8 transitions
+
+net test1_1
+tr t0 : produce_produs P_activ -> P_procesare 
+tr t1 : fix_cap bufer -> bufer_compl 
+tr t3 : depoziteaza_produs P_procesare bufer_compl -> P_terminat bufer 
+tr t4 : activare P_terminat -> P_activ 
+tr t6 : consuma_produs C_activ bufer -> C_terminat bufer_compl 
+tr t7 : rest C_terminat bufer_compl*3 -> C_repaus bufer_compl*3 
+tr t8 : activare C_terminat bufer -> C_activ bufer 
+tr t9 : activare C_repaus -> C_activ 
+pl C_activ (1)
+pl P_activ (1)
+pl bufer_compl (3)
+
+0.000s
+
+P-SEMI-FLOWS GENERATING SET ------------------------------------- 
+
+invariant
+
+bufer bufer_compl
+P_activ P_procesare P_terminat
+C_activ C_repaus C_terminat
+
+0.000s
+
+ANALYSIS COMPLETED  --------------------------------------------- 
+
+
+

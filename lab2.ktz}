@@ -1,0 +1,23 @@
+
+state 0
+props P1 R1 R2 p4
+trans T1/1 T4/2
+
+state 1
+props R2 p2 p4
+trans T2/3 T4/4
+
+state 2
+props P1 R1 p5
+trans T1/4 T5/5
+
+state 3
+props p3 p4
+trans T3/0
+
+state 4
+props p2 p5
+trans T5/6
+
+
+
